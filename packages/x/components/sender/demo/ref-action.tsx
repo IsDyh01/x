@@ -14,6 +14,13 @@ const App: React.FC = () => {
     <Flex wrap gap={12}>
       <Button
         onClick={() => {
+          senderRef.current?.clear?.();
+        }}
+      >
+        Clear
+      </Button>
+      <Button
+        onClick={() => {
           senderRef.current!.insert('some text');
         }}
       >
